@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - E-commerce</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="top-header">
+                <div class="logo">
+                    <a href="index.html">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span>Brand</span>
+                    </a>
+                </div>
+                
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <div class="category-select dropdown">
+                        <span>All category</span>
+                        <i class="fas fa-chevron-down"></i>
+                        <div class="dropdown-content">
+                            <a href="#">Electronics</a>
+                            <a href="#">Clothing</a>
+                            <a href="#">Home & Garden</a>
+                            <a href="#">Sports</a>
+                            <a href="#">Toys</a>
+                        </div>
+                    </div>
+                    <button class="search-btn">Search</button>
+                </div>
+                
+                <div class="user-actions">
+                    <div class="action-item">
+                        <a href="#" class="action-link">
+                            <i class="fas fa-user"></i>
+                            <span>Profile</span>
+                        </a>
+                    </div>
+                    <div class="action-item">
+                        <a href="#" class="action-link">
+                            <i class="fas fa-comment"></i>
+                            <span>Message</span>
+                        </a>
+                    </div>
+                    <div class="action-item">
+                        <a href="#" class="action-link">
+                            <i class="fas fa-heart"></i>
+                            <span>Orders</span>
+                        </a>
+                    </div>
+                    <div class="action-item">
+                        <a href="cart.html" class="action-link">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>My cart</span>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <div class="category-menu dropdown">
+                    <i class="fas fa-bars"></i>
+                    <span>All category</span>
+                    <div class="dropdown-content category-dropdown">
+                        <a href="#">Electronics</a>
+                        <a href="#">Clothing & Apparel</a>
+                        <a href="#">Home, Garden & Kitchen</a>
+                        <a href="#">Health & Beauty</a>
+                        <a href="#">Jewelry & Watches</a>
+                        <a href="#">Computer & Tech</a>
+                        <a href="#">Toys & Hobbies</a>
+                        <a href="#">Sports & Outdoor</a>
+                        <a href="#">Automotive</a>
+                    </div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">Hot offers</a></li>
+                    <li><a href="#">Gift boxes</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Menu item</a></li>
+                    <li class="dropdown">
+                        <a href="#">Help <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#">Customer Service</a>
+                            <a href="#">Order Status</a>
+                            <a href="#">Shipping Info</a>
+                            <a href="#">Returns & Exchanges</a>
+                            <a href="#">Contact Us</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="nav-right">
+                    <div class="language-select dropdown">
+                        <span>English, USD</span>
+                        <i class="fas fa-chevron-down"></i>
+                        <div class="dropdown-content">
+                            <a href="#">English, USD</a>
+                            <a href="#">Spanish, EUR</a>
+                            <a href="#">French, EUR</a>
+                            <a href="#">German, EUR</a>
+                            <a href="#">Japanese, JPY</a>
+                        </div>
+                    </div>
+                    <div class="ship-to dropdown">
+                        <span>Ship to</span>
+                        <img src="https://placehold.co/20x15" alt="Flag">
+                        <i class="fas fa-chevron-down"></i>
+                        <div class="dropdown-content">
+                            <a href="#"><img src="https://placehold.co/20x15" alt="USA"> USA</a>
+                            <a href="#"><img src="https://placehold.co/20x15" alt="Canada"> Canada</a>
+                            <a href="#"><img src="https://placehold.co/20x15" alt="UK"> UK</a>
+                            <a href="#"><img src="https://placehold.co/20x15" alt="Australia"> Australia</a>
+                            <a href="#"><img src="https://placehold.co/20x15" alt="Germany"> Germany</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="separator">›</span>
+            <a href="#">Clothings</a>
+            <span class="separator">›</span>
+            <a href="#">Men's wear</a>
+            <span class="separator">›</span>
+            <span class="current">T-shirt</span>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="product-detail">
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/11-au7fyeQa7r3IXNm0LyZJ5b2NZG28Xb.png" alt="Mens Long Sleeve T-shirt" id="main-product-image">
+                </div>
+                <div class="thumbnail-images">
+                    <img src="https://placehold.co/100x100" alt="Thumbnail 1" class="thumbnail active" onclick="changeImage(this)">
+                    <img src="https://placehold.co/100x100" alt="Thumbnail 2" class="thumbnail" onclick="changeImage(this)">
+                    <img src="https://placehold.co/100x100" alt="Thumbnail 3" class="thumbnail" onclick="changeImage(this)">
+                    <img src="https://placehold.co/100x100" alt="Thumbnail 4" class="thumbnail" onclick="changeImage(this)">
+                    <img src="https://placehold.co/100x100" alt="Thumbnail 5" class="thumbnail" onclick="changeImage(this)">
+                </div>
+            </div>
+            
+            <div class="product-info">
+                <div class="stock-status in-stock">
+                    <i class="fas fa-check-circle"></i> In stock
+                </div>
+                <h1 class="product-title">Mens Long Sleeve T-shirt Cotton Base Layer Slim Muscle</h1>
+                
+                <div class="product-meta">
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="rating-value">9.3</span>
+                        <span class="reviews-count">32 reviews</span>
+                        <span class="sold-count">154 sold</span>
+                    </div>
+                </div>
+                
+                <div class="product-price-section">
+                    <div class="price-tiers">
+                        <div class="price-tier">
+                            <div class="price">$98.00</div>
+                            <div class="quantity">50-100 pcs</div>
+                        </div>
+                        <div class="price-tier active">
+                            <div class="price">$90.00</div>
+                            <div class="quantity">100-700 pcs</div>
+                        </div>
+                        <div class="price-tier">
+                            <div class="price">$78.00</div>
+                            <div class="quantity">700+ pcs</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-details-table">
+                    <div class="detail-row">
+                        <div class="detail-label">Price:</div>
+                        <div class="detail-value">Negotiable</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Type:</div>
+                        <div class="detail-value">Classic shoes</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Material:</div>
+                        <div class="detail-value">Plastic material</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Design:</div>
+                        <div class="detail-value">Modern nice</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Customization:</div>
+                        <div class="detail-value">Customized logo and design custom packages</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Protection:</div>
+                        <div class="detail-value">Refund Policy</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Warranty:</div>
+                        <div class="detail-value">2 years full warranty</div>
+                    </div>
+                </div>
+                
+                <div class="product-actions">
+                    <button class="btn btn-primary add-to-cart-btn" data-product-id="1">Add to cart</button>
+                    <button class="btn btn-outline wishlist-btn">
+                        <i class="far fa-heart"></i> Save for later
+                    </button>
+                </div>
+            </div>
+            
+            <div class="seller-card">
+                <div class="seller-header">
+                    <div class="seller-avatar">R</div>
+                    <div class="seller-info">
+                        <h3>Supplier</h3>
+                        <p>Guanjoi Trading LLC</p>
+                    </div>
+                </div>
+                
+                <div class="seller-details">
+                    <div class="seller-location">
+                        <img src="https://placehold.co/20x15" alt="Germany">
+                        <span>Germany, Berlin</span>
+                    </div>
+                    <div class="seller-verification">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Verified Seller</span>
+                    </div>
+                    <div class="seller-shipping">
+                        <i class="fas fa-globe"></i>
+                        <span>Worldwide shipping</span>
+                    </div>
+                </div>
+                
+                <div class="seller-actions">
+                    <button class="btn btn-primary">Send inquiry</button>
+                    <a href="#" class="seller-profile-link">Seller's profile</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="product-tabs">
+            <div class="tabs-header">
+                <button class="tab-btn active" data-tab="description">Description</button>
+                <button class="tab-btn" data-tab="reviews">Reviews</button>
+                <button class="tab-btn" data-tab="shipping">Shipping</button>
+                <button class="tab-btn" data-tab="seller">About seller</button>
+            </div>
+            
+            <div class="tab-content active" id="description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                
+                <div class="product-features">
+                    <div class="feature">
+                        <i class="fas fa-check"></i>
+                        <span>Some great feature name here</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check"></i>
+                        <span>Lorem ipsum dolor sit amet, consectetur</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check"></i>
+                        <span>Duis aute irure dolor in reprehenderit</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check"></i>
+                        <span>Some great feature name here</span>
+                    </div>
+                </div>
+                
+                <div class="product-specs">
+                    <h3>Specifications</h3>
+                    <table class="specs-table">
+                        <tr>
+                            <td>Model</td>
+                            <td>#8786867</td>
+                        </tr>
+                        <tr>
+                            <td>Style</td>
+                            <td>Classic style</td>
+                        </tr>
+                        <tr>
+                            <td>Certificate</td>
+                            <td>ISO-898921212</td>
+                        </tr>
+                        <tr>
+                            <td>Size</td>
+                            <td>34mm x 450mm x 19mm</td>
+                        </tr>
+                        <tr>
+                            <td>Memory</td>
+                            <td>36GB RAM</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="reviews">
+                <div class="reviews-content">
+                    <h3>Customer Reviews</h3>
+                    <p>This is the reviews tab content.</p>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="shipping">
+                <div class="shipping-content">
+                    <h3>Shipping Information</h3>
+                    <p>This is the shipping tab content.</p>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="seller">
+                <div class="seller-content">
+                    <h3>About the Seller</h3>
+                    <p>This is the seller tab content.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="related-products">
+            <h2>Related products</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/12-6D00SrPx3kqK7CTjTFG3Vw6FjlCIld.png" alt="Men Blazers Sets">
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-details">
+                        <div class="product-price">
+                            <span class="current-price">$7.00 - $99.50</span>
+                        </div>
+                        <h3 class="product-title">Men Blazers Sets Elegant Formal</h3>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placehold.co/200x200" alt="Men Shirt Sleeve">
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-details">
+                        <div class="product-price">
+                            <span class="current-price">$7.00 - $99.50</span>
+                        </div>
+                        <h3 class="product-title">Men Shirt Sleeve Polo Contrast</h3>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placehold.co/200x200" alt="Apple Watch Series">
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-details">
+                        <div class="product-price">
+                            <span class="current-price">$7.00 - $99.50</span>
+                        </div>
+                        <h3 class="product-title">Apple Watch Series Space Gray</h3>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placehold.co/200x200" alt="Basketball Crew Socks">
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-details">
+                        <div class="product-price">
+                            <span class="current-price">$7.00 - $99.50</span>
+                        </div>
+                        <h3 class="product-title">Basketball Crew Socks Long Stuff</h3>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://placehold.co/200x200" alt="New Summer Men's T-Shirts">
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-details">
+                        <div class="product-price">
+                            <span class="current-price">$7.00 - $99.50</span>
+                        </div>
+                        <h3 class="product-title">New Summer Men's castrol T-Shirts</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Subscribe on our newsletter</h2>
+                <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <div class="form-group">
+                        <i class="far fa-envelope"></i>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span>Brand</span>
+                    </div>
+                    <p>Best information about the company gies here but now lorem ipsum is</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Find store</a></li>
+                            <li><a href="#">Categories</a></li>
+                            <li><a href="#">Blogs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Partnership</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Find store</a></li>
+                            <li><a href="#">Categories</a></li>
+                            <li><a href="#">Blogs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Information</h3>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Money Refund</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>For users</h3>
+                        <ul>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Register</a></li>
+                            <li><a href="#">Settings</a></li>
+                            <li><a href="#">My Orders</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Get app</h3>
+                        <div class="app-buttons">
+                            <a href="#" class="app-btn">
+                                <img src="https://placehold.co/120x40" alt="App Store">
+                            </a>
+                            <a href="#" class="app-btn">
+                                <img src="https://placehold.co/120x40" alt="Google Play">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Ecommerce.</p>
+                <div class="language-selector">
+                    <img src="https://placehold.co/20x15" alt="English">
+                    <span>English</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

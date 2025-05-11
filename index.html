@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Marketplace</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="top-header">
+                <div class="logo">
+                    <a href="index.html">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span>Brand</span>
+                    </a>
+                </div>
+                
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <div class="category-select dropdown">
+                        <span>All category</span>
+                        <i class="fas fa-chevron-down"></i>
+                        <div class="dropdown-content">
+                            <a href="#">Electronics</a>
+                            <a href="#">Clothing</a>
+                            <a href="#">Home & Garden</a>
+                            <a href="#">Sports</a>
+                            <a href="#">Toys</a>
+                            <a href="#">Automotive</a>
+                            <a href="#">Books</a>
+                            <a href="#">Health & Beauty</a>
+                        </div>
+                    </div>
+                    <button class="search-btn">Search</button>
+                </div>
+                
+                <div class="user-actions">
+                    <div class="action-item">
+                        <a href="#" class="action-link">
+                            <i class="fas fa-user"></i>
+                            <span>Profile</span>
+                        </a>
+                    </div>
+                    <div class="action-item">
+                        <a href="#" class="action-link">
+                            <i class="fas fa-comment"></i>
+                            <span>Message</span>
+                        </a>
+                    </div>
+                    <div class="action-item">
+                        <a href="#" class="action-link">
+                            <i class="fas fa-heart"></i>
+                            <span>Orders</span>
+                        </a>
+                    </div>
+                    <div class="action-item">
+                        <a href="cart.html" class="action-link">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>My cart</span>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <div class="category-menu dropdown">
+                    <i class="fas fa-bars"></i>
+                    <span>All category</span>
+                    <div class="dropdown-content category-dropdown">
+                        <a href="product-listing.html">Electronics</a>
+                        <a href="product-listing.html">Clothing & Apparel</a>
+                        <a href="product-listing.html">Home, Garden & Kitchen</a>
+                        <a href="product-listing.html">Health & Beauty</a>
+                        <a href="product-listing.html">Jewelry & Watches</a>
+                        <a href="product-listing.html">Computer & Tech</a>
+                        <a href="product-listing.html">Toys & Hobbies</a>
+                        <a href="product-listing.html">Sports & Outdoor</a>
+                        <a href="product-listing.html">Automotive</a>
+                    </div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">Hot offers</a></li>
+                    <li><a href="#">Gift boxes</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Menu item</a></li>
+                    <li class="dropdown">
+                        <a href="#">Help <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#">Customer Service</a>
+                            <a href="#">Order Status</a>
+                            <a href="#">Shipping Info</a>
+                            <a href="#">Returns & Exchanges</a>
+                            <a href="#">Contact Us</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="nav-right">
+                    <div class="language-select dropdown">
+                        <span>English, USD</span>
+                        <i class="fas fa-chevron-down"></i>
+                        <div class="dropdown-content">
+                            <a href="#">English, USD</a>
+                            <a href="#">Spanish, EUR</a>
+                            <a href="#">French, EUR</a>
+                            <a href="#">German, EUR</a>
+                            <a href="#">Japanese, JPY</a>
+                        </div>
+                    </div>
+                    <div class="ship-to dropdown">
+                        <span>Ship to</span>
+                        <img src="https://placehold.co/20x15" alt="Flag">
+                        <i class="fas fa-chevron-down"></i>
+                        <div class="dropdown-content">
+                            <a href="#"><img src="https://placehold.co/20x15" alt="USA"> USA</a>
+                            <a href="#"><img src="https://placehold.co/20x15" alt="Canada"> Canada</a>
+                            <a href="#"><img src="https://placehold.co/20x15" alt="UK"> UK</a>
+                            <a href="#"><img src="https://placehold.co/20x15" alt="Australia"> Australia</a>
+                            <a href="#"><img src="https://placehold.co/20x15" alt="Germany"> Germany</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <div class="main-content">
+                <!-- Sidebar Categories -->
+                <div class="sidebar">
+                    <ul class="category-list">
+                        <li><a href="product-listing.html">Automobiles</a></li>
+                        <li><a href="product-listing.html">Clothes and wear</a></li>
+                        <li><a href="product-listing.html">Home interiors</a></li>
+                        <li><a href="product-listing.html">Computer and tech</a></li>
+                        <li><a href="product-listing.html">Tools, equipments</a></li>
+                        <li><a href="product-listing.html">Sports and outdoor</a></li>
+                        <li><a href="product-listing.html">Animal and pets</a></li>
+                        <li><a href="product-listing.html">Machinery tools</a></li>
+                        <li><a href="product-listing.html">More category</a></li>
+                    </ul>
+                </div>
+
+                <!-- Hero Banner -->
+                <div class="hero-banner">
+                    <div class="banner-content">
+                        <h2>Latest trending</h2>
+                        <h1>Electronic items</h1>
+                        <a href="#" class="btn">Learn more</a>
+                    </div>
+                    <div class="banner-image">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/home%201-9BlK4LQ4j06CP9OjJmuFcqTef6yfsd.png" alt="Electronic items">
+                    </div>
+                </div>
+
+                <!-- User Panel -->
+                <div class="user-panel">
+                    <div class="user-info">
+                        <img src="https://placehold.co/50x50" alt="User avatar">
+                        <div class="user-greeting">
+                            <p>Hi, user</p>
+                            <p>let's get stated</p>
+                        </div>
+                    </div>
+                    <div class="user-actions panel-actions">
+                        <button class="btn btn-primary">Join now</button>
+                        <button class="btn btn-outline">Log in</button>
+                    </div>
+                    <div class="promo-offers">
+                        <div class="promo">
+                            <p>Get US $10 off</p>
+                            <p>with a new supplier</p>
+                        </div>
+                        <div class="promo">
+                            <p>Send quotes with</p>
+                            <p>supplier preferences</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deals Section -->
+            <section class="deals-section">
+                <div class="deals-header">
+                    <div class="deals-title">
+                        <h2>Deals and offers</h2>
+                        <p>Hygiene equipments</p>
+                    </div>
+                    <div class="countdown">
+                        <div class="time-box">
+                            <span class="number" id="days">04</span>
+                            <span class="label">Days</span>
+                        </div>
+                        <div class="time-box">
+                            <span class="number" id="hours">13</span>
+                            <span class="label">Hour</span>
+                        </div>
+                        <div class="time-box">
+                            <span class="number" id="minutes">34</span>
+                            <span class="label">Min</span>
+                        </div>
+                        <div class="time-box">
+                            <span class="number" id="seconds">56</span>
+                            <span class="label">Sec</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="deals-products">
+                    <div class="product-card">
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        <img src="https://placehold.co/150x150" alt="Smart watches">
+                        <h3>Smart watches</h3>
+                        <div class="discount-tag">-25%</div>
+                    </div>
+                    <div class="product-card">
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        <img src="https://placehold.co/150x150" alt="Laptops">
+                        <h3>Laptops</h3>
+                        <div class="discount-tag">-15%</div>
+                    </div>
+                    <div class="product-card">
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        <img src="https://placehold.co/150x150" alt="GoPro cameras">
+                        <h3>GoPro cameras</h3>
+                        <div class="discount-tag">-40%</div>
+                    </div>
+                    <div class="product-card">
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        <img src="https://placehold.co/150x150" alt="Headphones">
+                        <h3>Headphones</h3>
+                        <div class="discount-tag">-25%</div>
+                    </div>
+                    <div class="product-card">
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        <img src="https://placehold.co/150x150" alt="Canon cameras">
+                        <h3>Canon cameras</h3>
+                        <div class="discount-tag">-25%</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Home and Outdoor Section -->
+            <section class="category-section">
+                <div class="category-banner">
+                    <div class="banner-content">
+                        <h2>Home and outdoor</h2>
+                        <button class="btn">Source now</button>
+                    </div>
+                    <div class="banner-image">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/home%202-S3AkErbrHvDB8WN6yF6X7seTrkCtJO.png" alt="Home and outdoor">
+                    </div>
+                </div>
+                <div class="category-products">
+                    <div class="product-item">
+                        <div class="product-info">
+                            <h3>Soft chairs</h3>
+                            <p>From USD 19</p>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://placehold.co/100x100" alt="Soft chairs">
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-info">
+                            <h3>Sofa & chair</h3>
+                            <p>From USD 19</p>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://placehold.co/100x100" alt="Sofa & chair">
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-info">
+                            <h3>Kitchen dishes</h3>
+                            <p>From USD 19</p>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://placehold.co/100x100" alt="Kitchen dishes">
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-info">
+                            <h3>Smart watches</h3>
+                            <p>From USD 19</p>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://placehold.co/100x100" alt="Smart watches">
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-info">
+                            <h3>Kitchen mixer</h3>
+                            <p>From USD 100</p>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://placehold.co/100x100" alt="Kitchen mixer">
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-info">
+                            <h3>Blenders</h3>
+                            <p>From USD 39</p>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://placehold.co/100x100" alt="Blenders">
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-info">
+                            <h3>Home appliance</h3>
+                            <p>From USD 19</p>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://placehold.co/100x100" alt="Home appliance">
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-info">
+                            <h3>Coffee maker</h3>
+                            <p>From USD 10</p>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://placehold.co/100x100" alt="Coffee maker">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Consumer Electronics Section -->
+            <section class="category-section">
+                <div class="category-banner electronics">
+                    <div class="banner-content">
+                        <h2>Consumer electronics and gadgets</h2>
+                        <button class="btn">Source now</button>
+                    </div>
+                    <div class="banner-image">
+                        <img src="https://placehold.co/300x300" alt="Consumer electronics">
+                    </div>
+                </div>
+                <div class="category-products">
+                    <div class="product-item">
+                        <div class="product-info">
+                            <h3>Smart watches</h3>
+                            <p>From USD 19</p>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://placehold.co/100x100" alt="Smart watches">
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-info">
+                            <h3>Cameras</h3>
+                            <p>From USD 89</p>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://placehold.co/100x100" alt="Cameras">
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-info">
+                            <h3>Headphones</h3>
+                            <p>From USD 10</p>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://placehold.co/100x100" alt="Headphones">
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-info">
+                            <h3>Smart watches</h3>
+                            <p>From USD 90</p>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://placehold.co/100x100" alt="Smart watches">
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-info">
+                            <h3>Gaming set</h3>
+                            <p>From USD 35</p>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://placehold.co/100x100" alt="Gaming set">
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-info">
+                            <h3>Laptops & PC</h3>
+                            <p>From USD 340</p>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://placehold.co/100x100" alt="Laptops & PC">
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-info">
+                            <h3>Smartphones</h3>
+                            <p>From USD 19</p>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://placehold.co/100x100" alt="Smartphones">
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-info">
+                            <h3>Electric kettle</h3>
+                            <p>From USD 240</p>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://placehold.co/100x100" alt="Electric kettle">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Request Quote Section -->
+            <section class="quote-section">
+                <div class="quote-content">
+                    <h2>An easy way to send requests to all suppliers</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                <div class="quote-form">
+                    <h3>Send quote to suppliers</h3>
+                    <form id="quote-form">
+                        <input type="text" placeholder="What item you need?" required>
+                        <textarea placeholder="Type more details" required></textarea>
+                        <div class="form-row">
+                            <input type="number" placeholder="Quantity" min="1" required>
+                            <select required>
+                                <option value="">Select unit</option>
+                                <option value="pcs">Pcs</option>
+                                <option value="kg">Kg</option>
+                                <option value="set">Set</option>
+                                <option value="pack">Pack</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send inquiry</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Recommended Items -->
+            <section class="recommended-section">
+                <h2>Recommended items</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/home%203-G9SjsitAjfNddrOuwV3QzJXceyP0Pj.png" alt="T-shirt">
+                        <div class="product-price">$10.30</div>
+                        <div class="product-title">T-shirts with multiple colors, for men</div>
+                    </div>
+                    <div class="product-card">
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        <img src="https://placehold.co/200x200" alt="Jeans shorts">
+                        <div class="product-price">$10.30</div>
+                        <div class="product-title">Jeans shorts for men blue color</div>
+                    </div>
+                    <div class="product-card">
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        <img src="https://placehold.co/200x200" alt="Winter coat">
+                        <div class="product-price">$12.50</div>
+                        <div class="product-title">Brown winter coat medium size</div>
+                    </div>
+                    <div class="product-card">
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        <img src="https://placehold.co/200x200" alt="Jeans bag">
+                        <div class="product-price">$34.00</div>
+                        <div class="product-title">Jeans bag for travel for men</div>
+                    </div>
+                    <div class="product-card">
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        <img src="https://placehold.co/200x200" alt="Leather wallet">
+                        <div class="product-price">$99.00</div>
+                        <div class="product-title">Leather wallet</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Extra Services -->
+            <section class="services-section">
+                <h2>Our extra services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/home%204-47pjEqxLK8D9zS0QPv0HD1zgVj9Lx9.png" alt="Source from Industry Hubs">
+                        <div class="service-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>Source from Industry Hubs</h3>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://placehold.co/300x150" alt="Customize Your Products">
+                        <div class="service-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Customize Your Products</h3>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://placehold.co/300x150" alt="Fast, reliable shipping">
+                        <div class="service-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <h3>Fast, reliable shipping by ocean or air</h3>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://placehold.co/300x150" alt="Product monitoring">
+                        <div class="service-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Product monitoring and inspection</h3>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Suppliers by Region -->
+            <section class="suppliers-section">
+                <h2>Suppliers by region</h2>
+                <div class="suppliers-grid">
+                    <div class="supplier">
+                        <img src="https://placehold.co/30x20" alt="Arabic Emirates">
+                        <div class="supplier-info">
+                            <h3>Arabic Emirates</h3>
+                            <p>shopname.ae</p>
+                        </div>
+                    </div>
+                    <div class="supplier">
+                        <img src="https://placehold.co/30x20" alt="Australia">
+                        <div class="supplier-info">
+                            <h3>Australia</h3>
+                            <p>shopname.ae</p>
+                        </div>
+                    </div>
+                    <div class="supplier">
+                        <img src="https://placehold.co/30x20" alt="United States">
+                        <div class="supplier-info">
+                            <h3>United States</h3>
+                            <p>shopname.ae</p>
+                        </div>
+                    </div>
+                    <div class="supplier">
+                        <img src="https://placehold.co/30x20" alt="Russia">
+                        <div class="supplier-info">
+                            <h3>Russia</h3>
+                            <p>shopname.ru</p>
+                        </div>
+                    </div>
+                    <div class="supplier">
+                        <img src="https://placehold.co/30x20" alt="Italy">
+                        <div class="supplier-info">
+                            <h3>Italy</h3>
+                            <p>shopname.it</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Newsletter -->
+            <section class="newsletter-section">
+                <div class="newsletter-content">
+                    <h2>Subscribe on our newsletter</h2>
+                    <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <div class="form-group">
+                            <i class="far fa-envelope"></i>
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span>Brand</span>
+                    </div>
+                    <p>Best information about the company gies here but now lorem ipsum is</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Find store</a></li>
+                            <li><a href="#">Categories</a></li>
+                            <li><a href="#">Blogs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Partnership</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Find store</a></li>
+                            <li><a href="#">Categories</a></li>
+                            <li><a href="#">Blogs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Information</h3>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Money Refund</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>For users</h3>
+                        <ul>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Register</a></li>
+                            <li><a href="#">Settings</a></li>
+                            <li><a href="#">My Orders</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Get app</h3>
+                        <div class="app-buttons">
+                            <a href="#" class="app-btn">
+                                <img src="https://placehold.co/120x40" alt="App Store">
+                            </a>
+                            <a href="#" class="app-btn">
+                                <img src="https://placehold.co/120x40" alt="Google Play">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Ecommerce.</p>
+                <div class="language-selector">
+                    <img src="https://placehold.co/20x15" alt="English">
+                    <span>English</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
